@@ -44,7 +44,9 @@ describe 'For all supported Ruby versions' do
     create_test_for('Ruby 2.1.3', engine: 'ruby', version: '2.1.3')
     create_test_for('Ruby 2.1.4', engine: 'ruby', version: '2.1.4')
     create_test_for('Ruby 2.1.5', engine: 'ruby', version: '2.1.5')
+    create_test_for('Ruby 2.1.5', engine: 'ruby', version: '2.1.6')
     create_test_for('Ruby 2.2.0', engine: 'ruby', version: '2.2.0')
+    create_test_for('Ruby 2.2.0', engine: 'ruby', version: '2.2.2')
 
     create_test_for('JRuby 1.7.1 Ruby 1.8.7', engine: 'jruby', engine_version: '1.7.1', version: '1.8.7')
     create_test_for('JRuby 1.7.1 Ruby 1.9.3', engine: 'jruby', engine_version: '1.7.1', version: '1.9.3')
@@ -98,7 +100,9 @@ describe 'For all supported Ruby versions' do
     create_test_for('Ruby 2.1.3', engine: 'ruby', version: '2.1.3')
     create_test_for('Ruby 2.1.4', engine: 'ruby', version: '2.1.4')
     create_test_for('Ruby 2.1.5', engine: 'ruby', version: '2.1.5')
+    create_test_for('Ruby 2.1.5', engine: 'ruby', version: '2.1.6')
     create_test_for('Ruby 2.2.0', engine: 'ruby', version: '2.2.0')
+    create_test_for('Ruby 2.2.0', engine: 'ruby', version: '2.2.2')
 
     create_test_for('JRuby 1.7.1 Ruby 1.8.7', engine: 'jruby', engine_version: '1.7.1', version: '1.8.7')
     create_test_for('JRuby 1.7.1 Ruby 1.9.3', engine: 'jruby', engine_version: '1.7.1', version: '1.9.3')
