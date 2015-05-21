@@ -66,6 +66,13 @@ describe 'For all supported Ruby versions' do
           expect(browser).to have_body('00040000')
         end
       end
+
+      it "supports postgres", version: options[:version] do
+        2.times do
+          browser.visit_path('/pg')
+          expect(@app).to have_logged('PG::ConnectionBad - could not connect to server: No such file or directory')
+        end
+      end
     end
   end
 
