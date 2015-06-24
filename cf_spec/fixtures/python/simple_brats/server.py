@@ -5,6 +5,7 @@ import sys
 import hiredis
 
 
+from scipy import special, optimize
 from flask import Flask
 app = Flask(__name__)
 
@@ -43,6 +44,12 @@ def test_redis():
     reader.feed("$5\r\nHello\r\n") 
     return reader.gets()
 
+
+@app.route("/scipy")
+def test_scipy():
+    f = lambda x: -special.jv(3, x)
+    optimize.minimize(f, 1.0)
+    return "Hello Scipy"
 
 app.debug = True
 

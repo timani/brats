@@ -3,3 +3,4 @@ bcrypt
 hiredis
 psycopg2
 mysqlclient
+scipy

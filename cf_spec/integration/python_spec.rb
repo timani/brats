@@ -56,6 +56,15 @@ RSpec.shared_examples :a_deploy_of_python_app_to_cf do |python_version, stack|
         expect(browser).to have_body 'Hello'
       end
     end
+
+    it 'supports loading and running the scipy lib', version: python_version do
+      2.times do
+        browser.visit_path('/scipy')
+        expect(browser).to have_body 'Hello Scipy'
+      end
+    end
+
+
   end
 
   def generate_app(app_name, version)
